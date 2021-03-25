@@ -1,0 +1,359 @@
+/*---------------------
+Authorized::Forhad Reza
+-----------*/
+/* ====== Main CSS=====*/
+*{margin:0;padding:0}
+
+#wrapper{
+	width:960px;
+	margin:0 auto;
+	background-color:white;
+}
+body{
+	background-image:url("../img/banner/portfolio-7.jpg");
+}
+
+
+#social{
+	background-color:#000030;
+	height:35px;
+}
+#social a img{
+	width:25px;
+	height:25px;
+	float:right;
+	margin-right:18px;
+	margin-top:3px;
+	display:block;
+	clear:left;
+}
+#social p{
+	color:#fff;
+	font-family:arial;
+	font-size:16px;
+	float:left;
+	margin-left:20px;
+	padding:8px;
+	display:block;
+}
+
+
+
+#header{
+	background:#8C8C8C;
+	height:145px;
+}
+
+#header h1{
+	font-size:40px;
+}
+.logo{
+	width:300px;
+	height:145px;
+	float:left;
+	background-color:green;
+	margin-right:2px;
+}
+.headline{
+	width:658px;
+	height:145px;
+	float:right;
+	background-color:gray;
+}
+
+
+#nav{
+	background-color:#000080;
+	height:38.3px;
+}	
+
+#nav ul li{
+	float:left;
+	border-left:0.5px solid #00a030;
+	border-right:0.5px solid #000080;
+	background-color:yellow;
+	list-style-type:none;
+}
+#nav ul li img{
+	width:30px;
+	height:30px;
+	margin-right:20px;
+}
+#nav ul{
+	margin-left:40px;
+}
+#nav ul li:first-child{
+	border-left:none;
+}
+#nav ul li:last-child{
+	border-right:none;
+}
+#nav ul li a{
+	text-decoration:none;
+	font-family:arial;
+	color:#000080;
+	display:block;
+	padding:10px 20px;
+	transition:all 0.2s ease; 
+}
+#nav ul li a:hover{
+	background:green;
+	color:#fff;
+}
+
+
+/* Dropdown*/
+#nav ul li{
+	position:relative;
+}
+#nav ul li ul{
+	position:absolute;
+	left:-99999px;
+}
+#nav ul li:hover ul{
+	left:0;
+}
+
+#nav ul li ul li{
+	float:none;
+	width:180px;
+	border-left:none;
+	border-right:none;
+	border-top:0.5px solid #00a030;
+	border-bottom:0.5px solid #000080;
+}
+#nav ul li ul li:last-child{
+	border-bottom:none;
+}
+
+
+/* Sub-Dropdown*/
+#nav ul li ul li ul{
+	position:absolute;
+	top:-99999px;
+	border-left:0.5px solid #000080;
+}
+#nav ul li ul li:hover ul{
+	top:0;
+	left:140px;
+}
+#nav ul li ul li ul li{
+	background-color:#FF4D4D;
+}
+
+#nav ul li ul li ul li a{
+	color:black;
+}
+
+#nav{
+	
+}
+
+#section img{
+	width:658px;
+	height:320px;
+}
+#section{
+	width:658px;
+	height:320px;
+	background-color:gray;
+	margin-right:2px;
+	margin-top:2px;
+	float:;
+}
+#sideber img{
+	width:300px;
+}
+#sideber{
+	width:300px;
+	height:1282px;
+	float:right;
+	background-color:gray;
+	margin-top:2px;
+}
+
+
+#content_main{
+	width:658px;
+	height:960px;
+	background-color:gray;
+	margin-right:2px;margin-top:2px;
+	margin-bottom:2px;
+	float:;
+}
+
+
+/*---------------------
+Authorized::Forhad Reza
+-----------*/
+
+#footer{
+	
+}
+
+#footer{
+	height:40px;
+	width:960px;
+	background:#5E5E5E;
+}
+#footer p{
+	color:#fff;
+	font-family:arial;
+	text-align:center;
+	display:block;
+	padding:10px 20px;
+}
+#footer p a{
+	text-decoration:none;
+	color:#3333FF;
+}
+#footer p a:hover {
+	color:red;
+}
+
+
+/* ============== 
+Style for Others Page
+*/
+#sideber-loop{
+	width:300px;
+	height:960px;
+	float:right;
+	margin-top:2px;
+	background-color:black;
+}
+
+#content_main-loop{
+	width:658px;
+	height:960px;
+	background-color:blue;
+	margin-right:2px;margin-top:2px;
+	margin-bottom:2px;
+	float:;
+}
+
+
+/* Form */ 
+
+form{
+	background:white;
+	
+}
+
+
+input[type=text]{
+	width:200px;
+	height:20px;
+	font-weight:bold;
+}
+textarea{
+	color:blue;
+	width:300px;
+	height:150px;
+}
+label{
+	color:green;
+}
+input[type=submit]{
+	background-color:green;
+	color:white;
+	width:100px;
+	height:30px;
+	padding:5px;
+	border-radius:8px;
+}
+input[type=submit]:hover {
+	background-color:blue;
+	color:white;
+}
+input[type=reset]{
+	background-color:green;
+	color:white;
+	width:100px;
+	height:30px;
+	border-radius:8px;
+}
+input[type=reset]:hover {
+	background-color:red;
+	color:white;
+}
+
+
+/* Table */
+table{
+	width:600px;
+	text-align:center;
+	margin:10px auto;
+	background-color:#dddccc;
+	border-collapse:collapse;
+	border:3px solid blue;
+}
+table, th, td{
+	border-collapse:collapse;
+	border:3px solid blue;
+}
+.thead{
+	background-color:#bbcddd;
+}
+.tfoot{
+	text-align:left;
+	background-color:#ff77dd;
+	color:#fff
+}
+.clr4{
+	background-color:yellow;
+}
+table caption{
+	background-color:blue;
+}
+
+
+/* iframe--*/
+iframe{
+	width:638px; 
+	height:450px;
+	margin-left:8px;
+	border:2px solid blue;
+}
+
+
+
+
+/* Making 3 column */
+.clm{
+	width:658px;
+}
+.box img{
+	margin-top:10px;
+	width:200px;
+	height:px;
+}
+.box{
+	width:200px;
+	float:left;
+	margin-left:15px;
+}
+.box h2{
+	color:red;
+	background-color:;
+}
+.box p{
+	text-align:justify;
+}
+.box a{
+	text-decoration:none;
+	background-color:blue;
+	color:red;
+	display:block;
+	text-align:center;
+	padding:3px 0;
+	
+	transition:all 1s ease;
+}
+ .box a:hover{
+	 background:#000;
+	 color:#fff;
+}
+/*---------------------
+Authorized::Forhad Reza
+-----------*/

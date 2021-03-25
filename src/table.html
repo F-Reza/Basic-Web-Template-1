@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>CSE-301_Web-Programming</title>
+		<link rel="stylesheet" href="../css/style.css" />
+	</head>
+
+	<body>
+		<div id="wrapper">
+		
+		<!--Header-->
+		<header> 
+		
+		<div id="social">
+					<a href="#"><img src="../img/social/facebook.png" alt="" /></a>
+					<a href="#"><img src="../img/social/linkedin.png" alt="" /></a>
+					<a href="#"><img src="../img/social/Instagram.png" alt="" /></a>
+					<a href="#"><img src="../img/social/twitter.png" alt="" /></a>
+					<a href="#"><img src="../img/social/youtube.png" alt="" /></a>
+					<a href="#"><img src="../img/social/Skype.png" alt="" /></a>
+					<a href="#"><img src="../img/social/Printersat.png" alt="" /></a>
+					<a href="#"><img src="../img/social/Whatsapp.png" alt="" /></a>
+				
+				
+				<p><!--Start|| Date & Time-->
+					<script type="text/javascript">
+						var myDate=new Date();
+						var myDay=myDate.getDay();
+						
+						var weekday=['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+						
+						document.write("Today is : " + weekday[myDay]);
+						document.write(" ---- ");
+						
+						var hours=myDate.getHours();
+						var ampm=hours>=12 ? 'PM' : 'AM' ;
+						hours=hours % 12;
+						hours=hours ? hours : 12;
+						
+						var minutes=myDate.getMinutes();
+						minutes=minutes<10 ? '0' + minutes :minutes;
+
+						var myTime=hours + " : " + minutes + " : " + myDate.getMilliseconds()+ " " + ampm;
+						document.write("\tCurrent Time is : " + myTime);
+					</script>
+				</p> <!-- End || of Date & Time-->
+				</div>
+
+				
+			<div id="header">
+				<div class="profile">
+				</div>
+
+				<div class="teacher">
+				</div>
+				
+			</div> 
+		</header>
+		
+		
+		<!--Navigation/Menu-->
+		<nav>
+			<div id="nav">
+				<ul>
+					<li><a href="../index.html"><!--<img src="img/gplus.png" alt="" />-->Home</a>
+					</li>
+					<li class="sub"><a href="#">Prectice</a> 
+						<ul>
+							<li><a href="#">Table</a></li>
+							<li><a href="form.html">Form</a></li>
+							<li><a href="iframe.html">iframe</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Project</a>
+						<ul>
+							
+							<li><a href="#">Web</a></li>
+							<li><a href="#">C</a></li>
+							<li><a href="#">Java</a></li>
+							<li><a href="#">SQL</a></li>
+							<li><a href="#">Android</a></li>
+							<li><a href="#">AutoCad</a></li>
+							
+						</ul>
+					</li>
+					<li class="sub"><a href="#">Skill</a> 
+						<ul>
+							<li class="sub"><a href="#">WEB</a>
+								<ul>
+									<li><a href="#">HTML</a></li>
+									<li><a href="#">CSS</a></li>
+									<li><a href="#">PHP</a></li>
+									<li><a href="#">JavaScript</a></li>
+									<li><a href="#">JQuary</a></li>
+									<li class="sub"><a href="#">Wordpress</a></li>
+									<li><a href="#">Web Design</a></li>
+									<li><a href="#">Web Devlopment</a></li>
+								</ul>
+							</li>
+							
+							<li><a href="#">C</a></li>
+							<li><a href="#">Java</a></li>
+							<li><a href="#">SQL</a></li>
+							<li><a href="#">Office</a>
+								<ul>
+									<li><a href="#">MS Word</a></li>
+									<li><a href="#">MS Excel</a></li>
+									<li><a href="#">MS PowerPoinr</a></li>
+									<li><a href="#">MS Access</a></li>
+								</ul>
+							</li>
+							
+							<li><a href="#">Adobe</a>
+								<ul>
+									<li><a href="#">Photoshop</a></li>
+									<li><a href="#">Ilastrator</a></li>
+									<li><a href="#">After Effect</a></li>
+									<li><a href="#">Primier Pro</a></li>
+									<li><a href="#">InDesign</a></li>
+								</ul>
+							</li>
+							<li><a href="#">AutoCad</a></li>
+							<li><a href="#">Android Studio</a></li>
+						</ul>
+					
+					</li>
+					
+					<li class="sub"><a href="#">Service</a>
+						<ul>
+							<li><a href="#">Web Design</a></li>
+							<li><a href="#">Web Devlopment</a></li>
+							<li class="sub"><a href="#">Wordpress</a>
+								<ul>
+									<li><a href="#">Theme</a></li>
+									<li><a href="#">Plagin</a></li>
+								</ul>
+							</li>
+							
+							<li><a href="#">Android Application</a></li>
+						</ul>
+					</li>
+					
+					<ul>
+						<li class="sub"><a href="#">Galary</a>
+							<ul>
+								<li><a href="#">Images</a></li>
+								<li><a href="#">Video</a></li>
+								<li><a href="#">Audio</a></li>
+							</ul>
+						</li>
+					</ul>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="about.html">About</a></li>
+
+				</ul>
+			</div>
+		</nav>
+		
+		
+		<!--Sideber-->
+		<aside>
+			<div id="sideber-loop">
+					
+			</div>
+		</aside>
+			
+		
+		<!--Content-->
+		<content>
+			<div id="content_main">
+				<article>
+					<p><h2>Table</h2></p>
+				</article>
+				
+				<!-- Start Table-->
+				<table border="2"cellpadding="8">
+				<caption><b> {*----------Table Name----------*} </b></caption>
+					
+					<thead>
+					<tr class="thead">
+						<th>Name</th>
+						<th>ID</th>
+						<th>Dept</th>
+						<th>Batch</th>
+					</tr>
+					</thead>
+					
+					<tfoot class="tfoot">
+					<tr>
+						<td colspan="3">Total-1</td>
+						<td colspan="1">Total-2</td>
+					</tr>
+					</tfoot>
+					
+					
+					<tr>
+						<td>Reza</td>
+						<td>18200</td>
+						<td>CSE</td>
+						<td>182</td>
+					</tr>
+					<tr>
+						<td>Abid</td>
+						<td>18200</td>
+						<td>EEE</td>
+						<td>182</td>
+					</tr>
+					<tr>
+						<td>Arko</td>
+						<td>18200</td>
+						<td>CSE</td>
+						<td>182</td>
+					</tr>
+					<tr>
+						<td>Rafi</td>
+						<td>18200</td>
+						<td>CSE</td>
+						<td>182</td>
+					</tr>
+					<tr>
+						<td>Durjoy</td>
+						<td>18200</td>
+						<td>EEE</td>
+						<td>182</td>
+					</tr>
+					<tr>
+						<td colspan="2">Demo-1</td>
+						<td colspan="2">Demo-2</td>
+					</tr>
+					<tr>
+						<td colspan="1">Demo-3</td>
+						<td class="clr4" colspan="3">Demo-4</td>
+					</tr>
+					
+				</table>
+				
+				
+			</div>
+
+		</content>
+		
+		
+		<!--Footer-->
+		<footer>
+			<div id="footer">
+				<p>&copy All Right Reseved By <a href="http://rezaweb.ml" target="_blank"> REZAWEB </a></p>
+			</div>
+		</footer>
+		
+		</div>
+	</body>
+</html>
